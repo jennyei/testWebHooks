@@ -1,5 +1,4 @@
 name: Do Something That Needs Scheduled
-
 on:
   repository_dispatch:
     types: [do-something]
