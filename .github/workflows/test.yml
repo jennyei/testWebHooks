@@ -3,7 +3,6 @@ run-name: Comet Webhook Test - ${{ github.actor }}
 on:
   repository_dispatch:
     
-
 jobs:
   Webhook-Test:
     runs-on: ubuntu-latest
