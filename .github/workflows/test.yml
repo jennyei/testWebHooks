@@ -1,7 +1,6 @@
 name: Webhooks Test
 run-name: Comet Webhook Test - ${{ github.actor }}
-on:
-  repository_dispatch:
+on: workflow_dispatch
     
 jobs:
   Webhook-Test:
