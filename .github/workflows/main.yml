@@ -5,7 +5,7 @@ on:
     types: [webhook_staging]
 
 jobs:
-  Webhook-Test:
+  testWebHooks:
     runs-on: windows
     steps:
       - run: echo "A user has requested to promote model version ${{ github.event.client_payload.version }} to ${{ github.event.client_payload.status }}."
