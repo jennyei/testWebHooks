@@ -1,13 +1,12 @@
-name: Webhooks Test
-run-name: Comet Webhook Test - ${{ github.actor }}
+name: Do Something That Needs Scheduled
+
 on:
   repository_dispatch:
     types: do-something
-    
 jobs:
-  Webhook-Test:
+  build:
+    name: Run Some Thing
     runs-on: ubuntu-latest
     steps:
-      - run: echo "A user has requested to promote model version ${{ github.event.client_payload.version }} to ${{ github.event.client_payload.status }}."
-      - run: echo "Registry - ${{ github.event.client_payload.registryModelName }}" 
-      - run: echo "Workspace - ${{ github.event.client_payload.workspaceName }}"
+      - name: Do Something
+        run: echo Doing Something...
