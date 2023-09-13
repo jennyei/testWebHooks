@@ -2,8 +2,7 @@ name: Webhooks Test
 run-name: Comet Webhook Test - ${{ github.actor }}
 on:
   repository_dispatch:
-
-
+    types: [webhookgithub]
 jobs:
   testWebHooks:
     runs-on: windows
