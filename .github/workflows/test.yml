@@ -1,7 +1,7 @@
 name: Do Something That Needs Scheduled
 on:
   repository_dispatch:
-    types: [do-something]
+    types: [QA]
 jobs:
   build:
     name: Run Some Thing
