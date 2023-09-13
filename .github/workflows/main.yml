@@ -2,7 +2,7 @@ name: Webhooks Test
 run-name: Comet Webhook Test - ${{ github.actor }}
 on:
   repository_dispatch:
-    - on [WebhookUrlEventTrigger]
+    types: [WebhookUrlEventTrigger]
 jobs:
   testWebHooks:
     runs-on: ubuntu
