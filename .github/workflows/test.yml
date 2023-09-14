@@ -1,7 +1,6 @@
 name: Do Something That Needs Scheduled
 on:
   repository_dispatch:
-    types: [MODEL_STATUS_CHANGED]
 jobs:
   build:
     name: Run Some Thing
