@@ -1,4 +1,4 @@
-name: Do Something That Needs Scheduled
+name: Automation test run
 on:
   repository_dispatch:
 jobs:
