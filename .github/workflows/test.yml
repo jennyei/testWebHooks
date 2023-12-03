@@ -3,7 +3,7 @@ on:
   repository_dispatch:
 jobs:
   build:
-    name: Run Some Thing
+    name: Automation run
     runs-on: ubuntu-latest
     steps:
       - name: Do Something
