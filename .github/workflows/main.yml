@@ -1,4 +1,4 @@
-name: Webhooks Test
+name: Webhooks Test2
 run-name: Comet Webhook Test - ${{ github.actor }}
 on:
   workflow_dispatch:
