@@ -7,5 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Do Something
-      - run: echo Doing Something...
-      - run: 'echo "payload: ${{ toJson(github.event.client_payload) }}"'
+      - run: echo ${{ toJson(github.event.client_payload) }}
